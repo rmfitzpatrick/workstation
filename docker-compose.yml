@@ -1,0 +1,11 @@
+version: '2'
+services:
+  workstation:
+    image: workstation:latest
+    hostname: workstation
+    volumes:
+      - "../:/git"
+    privileged: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
