@@ -1,5 +1,4 @@
 FROM centos:7
-MAINTAINER: rmfitzpatrick@gmail.com
 
 RUN yum install -y epel-release
 RUN yum upgrade -y
@@ -14,6 +13,8 @@ RUN yum install -y \
     which \
     git \
     pandoc
+
+RUN debuginfo-install -y python-2.7.5-58.el7.x86_64
 
 RUN pip install --upgrade pip
 
