@@ -1,2 +1,4 @@
 ipython
 virtualenvwrapper
+tox
+flake8

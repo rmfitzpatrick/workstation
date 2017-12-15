@@ -6,7 +6,8 @@ export TERM=xterm-256color
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias ll='ls -ltraph'
+alias ll='ls -laph'
+alias f8='flake8'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
